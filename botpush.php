@@ -8,7 +8,7 @@ $access_token = '1GJIFzTVEKrfRRzuHCvMttSHgPJPpXvGzJ28CXTb0tS62ZE5Tf9AvGQQcyABrOt
 
 $channelSecret = '688212641ae8e578ca9cc7cee78a367e';
 
-$pushID = 'U456b93778afeee3409ac04caed1a69cc';
+$pushID = 'ผมชื่อมอสครับ ผมมีแฟนแล้วครับ แฟนของผมชื่อปิ่น ผมรักแฟนผมคนเดียวครับ แต่ก่อนหน้านั้นผมอยากลองไปเที่ยวเลาจ์ซักครั้งครับ';
 
 $httpClient = new \LINE\LINEBot\HTTPClient\CurlHTTPClient($access_token);
 $bot = new \LINE\LINEBot($httpClient, ['channelSecret' => $channelSecret]);
