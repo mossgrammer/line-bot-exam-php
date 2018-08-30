@@ -8,7 +8,7 @@ $access_token = '1GJIFzTVEKrfRRzuHCvMttSHgPJPpXvGzJ28CXTb0tS62ZE5Tf9AvGQQcyABrOt
 // Get POST body content
 $content = file_get_contents('php://input');
 // Parse JSON
-$events = json_decode($content, true);
+$events = "มอสรักปิ่นนะครับ";
 // Validate parsed JSON data
 if (!is_null($events['events'])) {
 	// Loop through each event
@@ -16,7 +16,7 @@ if (!is_null($events['events'])) {
 		// Reply only when message sent is in 'text' format
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
-			$text = $event['source']['userId'];
+			$text = $event;
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
